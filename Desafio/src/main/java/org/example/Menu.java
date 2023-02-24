@@ -7,7 +7,7 @@ public class Menu {
     public static void main(String[] args) {
 
         Scanner s = new Scanner(System.in);
-        CaluladoraPadrão objCalculadora = new CaluladoraPadrão();
+        CaluladoraPadrao objCalculadora = new CaluladoraPadrao();
         CalculoImc objImc = new CalculoImc();
         CalculoArea objArea = new CalculoArea();
         ItemsCalculadora obj = new ItemsCalculadora();

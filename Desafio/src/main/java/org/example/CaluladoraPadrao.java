@@ -1,16 +1,12 @@
 package org.example;
 
-public class CaluladoraPadrão extends ItemsCalculadora {
+public class CaluladoraPadrao extends ItemsCalculadora {
 
 
     private int valor;
 
-    public CaluladoraPadrão(Double n1, Double n2) {
-        this.n1 = n1;
-        this.n2 = n2;
-    }
 
-    public CaluladoraPadrão() {
+    public CaluladoraPadrao() {
 
     }
 
@@ -61,33 +57,5 @@ public class CaluladoraPadrão extends ItemsCalculadora {
         return potenciacaoo;
     }
 
-
-
-
-    public double getN1() {
-        return n1;
-    }
-
-    public void setN1(Double n1) {
-        this.n1 = n1;
-    }
-
-    public double getN2() {
-        return n2;
-
-    }
-
-    public void setN2(Double n2) {
-
-        this.n2 = n2;
-    }
-
-
-    public int getValor() {
-        return valor;
-    }
-
-    public void setValor(int valor) {
-        this.valor = valor;
-    }
 }
+
