@@ -12,7 +12,7 @@ public class Menu {
         CalculoArea objArea = new CalculoArea();
         ItemsCalculadora obj = new ItemsCalculadora();
 
-        System.out.println("1- Calculadora padrão");
+        System.out.println("1- Calculadora padrao");
         System.out.println("2- Calculadora IMC");
         System.out.println("3- Calculadora da area");
 
@@ -59,7 +59,6 @@ public class Menu {
                 case 3: {
 
                     objCalculadora.multiplicacao(objCalculadora.getN1(), objCalculadora.getN2());
-
                     break;
                 }
                 case 4: {
@@ -124,7 +123,7 @@ public class Menu {
             switch (objArea.getValor()) {
                 case 1: {
 
-                    System.out.println("esccreva o numero do lado do quadrado:");
+                    System.out.println("escreva o numero do lado do quadrado:");
                     objArea.setN1(s.nextDouble());
 
                     objArea.aredoquadrado(objArea.getN1());
@@ -135,10 +134,10 @@ public class Menu {
 
                 case 2: {
 
-                    System.out.println("esccreva o numero da base do triangulo:");
+                    System.out.println("escreva o numero da base do triangulo:");
                     objArea.setN1(s.nextDouble());
 
-                    System.out.println("esccreva o numero  da altura triangulo:");
+                    System.out.println("escreva o numero  da altura triangulo:");
                     objArea.setN2(s.nextDouble());
 
                     objArea.areaTrinagulo(objArea.getN1(), objArea.getN2());
@@ -150,7 +149,7 @@ public class Menu {
 
                 case 3: {
 
-                    System.out.println("esccreva o numero  do raio do circulo:");
+                    System.out.println("escreva o numero  do raio do circulo:");
                     objArea.setN1(s.nextDouble());
 
                     objArea.areaCirculo(objArea.getN1());
@@ -164,5 +163,4 @@ public class Menu {
         }
 
 
-    }
-}
+    }}
