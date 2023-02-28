@@ -20,152 +20,257 @@ public class Menu {
         obj.setValor_menu(s.nextInt());
 
 
-        if (obj.getValor_menu() == 1) {
+        for (int i = 0; i < 1; ) {
 
 
-            System.out.println("1- Somar");
-            System.out.println("2- subtrair");
-            System.out.println("3- multiplicar");
-            System.out.println("4- dividir");
-            System.out.println("5- potencializar");
-
-            System.out.println("Digite uma valor correspondente a operação:");
-            objCalculadora.setValor(s.nextInt());
+            if (obj.getValor_menu() == 1) {
 
 
-            System.out.println("escreva o primeiro numero");
+                System.out.println("1- Somar");
+                System.out.println("2- subtrair");
+                System.out.println("3- multiplicar");
+                System.out.println("4- dividir");
+                System.out.println("5- potencializar");
+
+                System.out.println("Digite uma valor correspondente a operação:");
+                objCalculadora.setValor(s.nextInt());
 
 
-            objCalculadora.setN1(s.nextDouble());
-
-            System.out.println("escreva o segundo numero");
-
-            objCalculadora.setN2(s.nextDouble());
+                System.out.println("escreva o primeiro numero");
 
 
-            switch (objCalculadora.getValor()) {
+                objCalculadora.setN1(s.nextDouble());
 
-                case 1: {
+                System.out.println("escreva o segundo numero");
 
-                    objCalculadora.soma(objCalculadora.getN1(), objCalculadora.getN2());
-                    break;
+                objCalculadora.setN2(s.nextDouble());
+
+
+                switch (objCalculadora.getValor()) {
+
+                    case 1: {
+
+                        objCalculadora.soma(objCalculadora.getN1(), objCalculadora.getN2());
+
+                        System.out.println("Se caso deseja continuar digite o numero 0");
+                        int n3 = s.nextInt();
+                        if (n3 == 1) {
+
+                            i++;
+
+                        }
+                        break;
+
+
+                    }
+
+                    case 2: {
+
+                        objCalculadora.subtracao(objCalculadora.getN1(), objCalculadora.getN2());
+                        System.out.println("Se caso deseja continuar digite o numero 0");
+                        int n3 = s.nextInt();
+                        if (n3 == 1) {
+
+                            i++;
+
+                        }
+                        break;
+                    }
+                    case 3: {
+
+                        objCalculadora.multiplicacao(objCalculadora.getN1(), objCalculadora.getN2());
+                        System.out.println("Se caso deseja continuar digite o numero 0");
+                        int n3 = s.nextInt();
+                        if (n3 == 1) {
+
+                            i++;
+
+                        }
+                        break;
+                    }
+                    case 4: {
+
+
+                        if (objCalculadora.getN2() != 0) {
+
+                            objCalculadora.divisao(objCalculadora.getN1(), objCalculadora.getN2());
+                            System.out.println("Se caso deseja continuar digite o numero 0");
+                            int n3 = s.nextInt();
+                            if (n3 == 1) {
+
+                                i++;
+
+                            }
+                            break;
+
+                        }
+
+
+                        obj.setMessage("erro! não é possivel realizar a divisão por 0");
+
+                        System.out.println(obj.getMessage());
+                        System.out.println("Se caso deseja continuar digite o numero 0");
+                        int n3 = s.nextInt();
+                        if (n3 == 1) {
+
+                            i++;
+
+                        }
+
+                        break;
+
+                    }
+
+                    case 5: {
+
+                        objCalculadora.potenciacao(objCalculadora.getN1(), objCalculadora.getN2());
+                        System.out.println("Se caso deseja continuar digite o numero 0");
+                        int n3 = s.nextInt();
+                        if (n3 == 1) {
+
+                            i++;
+
+                        }
+                        break;
+                    }
+
                 }
 
-                case 2: {
+            }
 
-                    objCalculadora.subtracao(objCalculadora.getN1(), objCalculadora.getN2());
-                    break;
+
+            if (obj.getValor_menu() == 2) {
+
+
+                System.out.println("Escreva o peso:");
+
+
+                objImc.setN1(s.nextDouble());
+
+                System.out.println("Escreva altura:");
+
+                objImc.setN2(s.nextDouble());
+
+
+                double valorimc = objImc.Calculoimc(objImc.getN1(), objImc.getN2());
+
+                if (valorimc < 19) {
+
+                    System.out.println("Abaixo do peso");
+                } else {
+                    if (valorimc < 25)
+                        System.out.println("peso ideal");
+
+                    else if (valorimc < 30)
+
+                        System.out.println("Acima do Peso");
+
+                    else if (valorimc < 35)
+                        System.out.println("Obesidade Leve");
+
+                    else
+                        System.out.println("obesidade");
+
+
                 }
-                case 3: {
 
-                    objCalculadora.multiplicacao(objCalculadora.getN1(), objCalculadora.getN2());
-                    break;
+
+                System.out.println("Se caso deseja continuar digite o numero 0");
+                int n3 = s.nextInt();
+                if (n3 == 1) {
+
+                    i++;
+
                 }
-                case 4: {
+
+            }
+
+            if (obj.getValor_menu() == 3) {
 
 
-                    if (objCalculadora.getN2() != 0) {
+                System.out.println("1- Area do Quadrado");
+                System.out.println("2- Area do Triangulo");
+                System.out.println("3- Area do Circulo  ");
 
-                        objCalculadora.divisao(objCalculadora.getN1(), objCalculadora.getN2());
+
+                System.out.println("Digite uma valor correspondente a operação:");
+                objArea.setValor(s.nextInt());
+
+
+                switch (objArea.getValor()) {
+                    case 1: {
+
+                        System.out.println("escreva o numero do lado do quadrado:");
+                        objArea.setN1(s.nextDouble());
+
+                        objArea.aredoquadrado(objArea.getN1());
+
+                        System.out.println("Se caso deseja continuar digite o numero 0");
+                        int n3 = s.nextInt();
+                        if (n3 == 1) {
+
+                            i++;
+
+                        }
+
+                        break;
+
+                    }
+
+                    case 2: {
+
+                        System.out.println("escreva o numero da base do triangulo:");
+                        objArea.setN1(s.nextDouble());
+
+                        System.out.println("escreva o numero  da altura triangulo:");
+                        objArea.setN2(s.nextDouble());
+
+                        objArea.areaTrinagulo(objArea.getN1(), objArea.getN2());
+
+                        System.out.println("Se caso deseja continuar digite o numero 0");
+                        int n3 = s.nextInt();
+                        if (n3 == 1) {
+
+                            i++;
+
+                        }
+
                         break;
 
                     }
 
 
-                    obj.setMessage("erro! não é possivel realizar a divisão por 0");
+                    case 3: {
 
-                    System.out.println(obj.getMessage());
+                        System.out.println("escreva o numero  do raio do circulo:");
+                        objArea.setN1(s.nextDouble());
 
-                    break;
+                        objArea.areaCirculo(objArea.getN1());
 
-                }
+                        System.out.println("Se caso deseja continuar digite o numero 0");
+                        int n3 = s.nextInt();
+                        if (n3 == 1) {
 
-                case 5: {
+                            i++;
 
-                    objCalculadora.potenciacao(objCalculadora.getN1(), objCalculadora.getN2());
-                    break;
-                }
+                        }
+                        break;
 
-            }
+                    }
 
-        }
-
-
-        if (obj.getValor_menu() == 2) {
-
-
-            System.out.println("escreva o primeiro numero");
-
-
-            objImc.setN1(s.nextDouble());
-
-            System.out.println("escreva o segundo numero");
-
-            objImc.setN2(s.nextDouble());
-
-
-            objImc.Calculoimc(objImc.getN1(), objImc.getN2());
-
-        }
-
-        if (obj.getValor_menu() == 3) {
-
-
-            System.out.println("1- Area do Quadrado");
-            System.out.println("2- Area do Triangulo");
-            System.out.println("3- Area do Circulo  ");
-
-
-            System.out.println("Digite uma valor correspondente a operação:");
-            objArea.setValor(s.nextInt());
-
-
-            switch (objArea.getValor()) {
-                case 1: {
-
-                    System.out.println("escreva o numero do lado do quadrado:");
-                    objArea.setN1(s.nextDouble());
-
-                    objArea.aredoquadrado(objArea.getN1());
-
-                    break;
-
-                }
-
-                case 2: {
-
-                    System.out.println("escreva o numero da base do triangulo:");
-                    objArea.setN1(s.nextDouble());
-
-                    System.out.println("escreva o numero  da altura triangulo:");
-                    objArea.setN2(s.nextDouble());
-
-                    objArea.areaTrinagulo(objArea.getN1(), objArea.getN2());
-
-                    break;
-
-                }
-
-
-                case 3: {
-
-                    System.out.println("escreva o numero  do raio do circulo:");
-                    objArea.setN1(s.nextDouble());
-
-                    objArea.areaCirculo(objArea.getN1());
 
                 }
 
 
             }
 
-
-        }
-
-        if (obj.getValor_menu() > 3) {
+            if (obj.getValor_menu() > 3) {
 
 
-            System.out.println("Numero invalido por favor insira um numero correspondente a lista acima");
+                System.out.println("Numero invalido por favor insira um numero correspondente a lista acima");
+            }
+
+
         }
 
 

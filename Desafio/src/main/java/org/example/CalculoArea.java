@@ -3,11 +3,11 @@ package org.example;
 public class CalculoArea extends ItemsCalculadora {
 
 
-    public double aredoquadrado(double n1) {
+    public double aredoquadrado(double lado) {
 
-        n2 = 2;
 
-        double area = Math.pow(n1, n2);
+
+        double area = Math.pow(lado, 2);
 
         System.out.println("A area do quadrado é: " + area + "m²");
 
@@ -15,9 +15,9 @@ public class CalculoArea extends ItemsCalculadora {
 
     }
 
-    public double areaTrinagulo(double n1, double n2) {
+    public double areaTrinagulo(double base, double altura) {
 
-        double areatri = (n1 * n2) / 2;
+        double areatri = (base * altura) / 2;
 
         System.out.println("A area do triangulo  é m² : " + areatri + "m²");
 
