@@ -9,7 +9,7 @@ public class CalculoArea extends ItemsCalculadora {
 
         double area = Math.pow(n1, n2);
 
-        System.out.println("Resultado" + area);
+        System.out.println("A area do quadrado é: " + area + "m²");
 
         return area;
 

@@ -12,7 +12,7 @@ public class CalculoImc extends ItemsCalculadora {
 
         double    calculoimc = n1/(n2 * n2);
 
-        System.out.println("o Valor do calculo do imc é:" + df.format(calculoimc) );
+        System.out.println("o Valor do calculo do imc é:" + df.format(calculoimc));
 
 
         return calculoimc;

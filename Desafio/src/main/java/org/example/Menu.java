@@ -16,7 +16,7 @@ public class Menu {
         System.out.println("2- Calculadora IMC");
         System.out.println("3- Calculadora da area");
 
-        System.out.println("insira O valor que corresponde a calculadora que você queira utilizar: ");
+        System.out.println("insira o valor da calculadora que foi citada acima: ");
         obj.setValor_menu(s.nextInt());
 
 
@@ -162,5 +162,12 @@ public class Menu {
 
         }
 
+        if (obj.getValor_menu() > 3) {
 
-    }}
+
+            System.out.println("Numero invalido por favor insira um numero correspondente a lista acima");
+        }
+
+
+    }
+}

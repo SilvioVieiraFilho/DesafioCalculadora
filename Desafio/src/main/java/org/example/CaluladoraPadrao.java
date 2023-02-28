@@ -15,7 +15,7 @@ public class CaluladoraPadrao extends ItemsCalculadora {
         Double soma = (n1 + n2);
 
 
-        System.out.println("o valor do calculo da soma é : " + soma);
+        System.out.println("o valor do calculo da soma é: " + soma);
 
         return soma;
     }
